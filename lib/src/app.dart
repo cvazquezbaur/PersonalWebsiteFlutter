@@ -73,13 +73,10 @@ class MyApp extends StatelessWidget {
                 switch (routeSettings.name) {
                   case SettingsView.routeName:
                     return SettingsView(controller: settingsController);
-                  case SampleItemDetailsView.routeName:
-                    return const SampleItemDetailsView();
-                  case SampleItemListView.routeName:
                   case LandingView.routeName:
                     return const LandingView();
                   default:
-                    return const SampleItemListView();
+                    return const LandingView();
                 }
               },
             );
