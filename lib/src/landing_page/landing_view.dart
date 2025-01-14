@@ -139,7 +139,7 @@ class LandingBody extends StatelessWidget {
             SizedBox(height: 25),
             ElevatedButton(
               onPressed: () {
-
+                
               }, 
               child: Text('Learn More About Me'),
             ),
