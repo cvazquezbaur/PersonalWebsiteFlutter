@@ -28,6 +28,7 @@ class LandingView extends StatelessWidget {
               fontFamily: 'Lato',
             ),
           ),
+          centerTitle: true,
         ),
         drawer: SafeArea(
           child: Drawer(
@@ -90,25 +91,60 @@ class LandingView extends StatelessWidget {
             ),
           ),
         ),
-        body: Center(
-          child: Column(
-            children: [
-              Text(
-                'Welcome to my personal website!',
-                style: bodyTextStyle,
-              ),
-              Text(
-                'I am a software developer, musician, actor, and skier.',
-                style: bodyTextStyle,
-              ),
-              Text(
-                'Please feel free to explore the site!',
-                style: bodyTextStyle,
-              ),
-            ],
-          ),
-        ),
+        body: LandingBody(),
       );
     });
   }
 }
+
+class LandingBody extends StatelessWidget {
+    const LandingBody({super.key});
+
+    @override
+    Widget build(BuildContext context) {
+      final screenWidth = MediaQuery.of(context).size.width;
+      final screenHeight = MediaQuery.of(context).size.height;
+
+      return Center(
+        child: Column(
+          children: [
+            SizedBox(height: 20),
+            Image.asset(
+              'assets/images/carlos_ski.jpg',
+              width: screenWidth * 0.8,
+              height: screenHeight * 0.4,
+            ),
+            SizedBox(height: 20),
+            Text(
+              'Welcome to my personal website!',
+              style: TextStyle(
+                fontSize: 18,
+                fontFamily: 'Lato',
+              ),
+            ),
+            Text(
+              'I am a software developer, musician, actor, and skier.',
+              style: TextStyle(
+                fontSize: 18,
+                fontFamily: 'Lato',
+              ),
+            ),
+            Text(
+              'Please feel free to explore the site!',
+              style: TextStyle(
+                fontSize: 18,
+                fontFamily: 'Lato',
+              ),
+            ),
+            SizedBox(height: 25),
+            ElevatedButton(
+              onPressed: () {
+
+              }, 
+              child: Text('Learn More About Me'),
+            ),
+          ],
+        ),
+      );
+    }
+  }
