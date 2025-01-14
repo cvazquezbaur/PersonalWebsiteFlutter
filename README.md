@@ -1,29 +1,5 @@
 # carlos_vazquez_baur_profile_application
 
-A new Flutter project.
+A new Flutter project to advertise for Carlos Andres Vazquez Baur.
 
-## Getting Started
-
-This project is a starting point for a Flutter application that follows the
-[simple app state management
-tutorial](https://flutter.dev/to/state-management-sample).
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-## Assets
-
-The `assets` directory houses images, fonts, and any other files you want to
-include with your application.
-
-The `assets/images` directory contains [resolution-aware
-images](https://flutter.dev/to/resolution-aware-images).
-
-## Localization
-
-This project generates localized messages based on arb files found in
-the `lib/src/localization` directory.
-
-To support additional languages, please visit the tutorial on
-[Internationalizing Flutter apps](https://flutter.dev/to/internationalization).
+This is going to be integrated with an email service for booking me as a singer/actor, a link to the ski santa fe website for booking me as a ski instructor, and the same email service for software inquiries. All tabs will have work samples like singing videos/pictures, link to git hub repo, references, and resume.
