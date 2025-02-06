@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -103,27 +102,32 @@ class LandingBody extends StatelessWidget {
 
     return Center(
       child: Column(
-        children: [
-          SizedBox(height: 20),
-          Container(
-            decoration: BoxDecoration(
-              border: Border.all(
-                color: Colors.black,
-                width: 2,
-              ),
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(10),
-              child: Image.asset(
-                'assets/images/Carlos.jpg',
-                width: screenWidth * 0.8,
-                height: screenHeight * 0.5,
-                fit: BoxFit.cover,
-              ),
-            ),
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          CircleAvatar(
+            radius: 70,
+            backgroundImage: AssetImage('assets/images/Carlos.jpg'),
           ),
           SizedBox(height: 20),
+          // Container(
+          //   decoration: BoxDecoration(
+          //     border: Border.all(
+          //       color: Colors.black,
+          //       width: 2,
+          //     ),
+          //     borderRadius: BorderRadius.circular(10),
+          //   ),
+          //   child: ClipRRect(
+          //     borderRadius: BorderRadius.circular(10),
+          //     child: Image.asset(
+          //       'assets/images/Carlos.jpg',
+          //       width: screenWidth * 0.8,
+          //       height: screenHeight * 0.5,
+          //       fit: BoxFit.cover,
+          //     ),
+          //   ),
+          // ),
+          // SizedBox(height: 20),
           Text(
             'Welcome to my personal website!',
             style: TextStyle(
